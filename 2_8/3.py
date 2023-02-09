@@ -1,7 +1,11 @@
-# 문자열 안에 문자열
-def solution(str1, str2):
-    if str2 in str1:
-        answer =1
-    else:
-        answer= 2
-    return answer
+a, b = map(int, input().split())
+
+def abc(level):
+    print(level, end=' ')
+    if level == b:
+        return
+    abc(level+1)
+    print(level, end=' ')
+
+
+abc(a)
